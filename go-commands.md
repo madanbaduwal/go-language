@@ -4,7 +4,7 @@
 
 $ go help 
 
-$ go mod init example.com/greetings # create package
+$ go mod init example.com/greetings # create package, generate go.mod file inside your module folder for module
 
 $ go run . # Run package
 
@@ -27,4 +27,24 @@ $ go list -f '{{.Target}}' # Discover the Go install path, where the go command 
 $ go install
 
 
+$ go get golang.org/x/example # to download a package
+
+
+$ go work init ./hello # Initialize the workspace, generate go.work file in your workspace folder for your workspace
+
+
+
 ```
+
+**go install vs go mod tidy vs go get vs go mod download**
+
+
+
+go install is used to install a binary, not a package
+
+go get to download a package
+
+go mod tidy scans your project and updates the go.mod file and downloads all dependencies mentioned in the go.mod file
+
+go mod download only downloads the dependencies from go.mod, without modifications of the go.mod file
+
