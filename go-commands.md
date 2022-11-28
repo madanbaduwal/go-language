@@ -8,6 +8,9 @@ $ go mod init example.com/greetings # create package, generate go.mod file insid
 
 $ go run . # Run package
 
+$ go run example.com/hello # Run the code in the workspace i.e run hello module code inside workspace
+
+
 $ go mod tidy # Add new module requirements and sums.
 
 
@@ -31,6 +34,9 @@ $ go get golang.org/x/example # to download a package
 
 
 $ go work init ./hello # Initialize the workspace, generate go.work file in your workspace folder for your workspace
+
+
+$ go work use ./example # Add the module to the workspace
 
 
 
