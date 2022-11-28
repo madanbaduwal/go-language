@@ -15,5 +15,8 @@ $ go mod edit -replace example.com/greetings=../greetings
 
 $ go test # For testing
 
+$ go test -v # -v flag to get verbose output that lists all of the tests and their results.
+
+
 
 ```
