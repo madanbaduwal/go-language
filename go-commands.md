@@ -17,6 +17,10 @@ $ go test # For testing
 
 $ go test -v # -v flag to get verbose output that lists all of the tests and their results.
 
+$ go build # compiles the packages, along with their dependencies, but it doesn't install the results.
+
+$ go list -f '{{.Target}}' # Discover the Go install path, where the go command will install the current package.
+
 
 
 ```
